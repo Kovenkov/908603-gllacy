@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Руслан Ковенков](https://up.htmlacademy.ru/htmlcss/23/user/908603).
-* Наставник: [Сергей Козлов](https://vk.com/dartess).
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
