@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин мороженного «Глейси»</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -11,25 +13,26 @@
         <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a></li>
-
-        <ul class="sub-menu">
-          <li><a class="highlight" href="#">Новинки</a></li>
-          <li><a href="#">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-
+        <li>
+          <a href="catalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li><a class="highlight" href="#">Новинки</a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="search-catalog"><a class="button-search" href="#">Поиск по сайту</a>
+        <li class="search-catalog">
+          <a class="button-search" href="#">Поиск по сайту</a>
           <div class="search-form modal-content-show">
             <form action="#" method="get">
               <input type="search" name="search" placeholder="Что ищем?">
-              <label class="hiden-top">Что ищем?</label>
+              <label class="hiden-top visually-hidden" >Что ищем?</label>
             </form>
           </div>
         </li>
@@ -40,13 +43,13 @@
             <label class="hiden-top">Электронная почта</label>
             <input type="password" name="password" placeholder="Пароль" required>
             <label class="hiden-top">Пароль</label>
-          <div>
-            <button class="site-button" type="submit" value="Войти">Войти</button>
-            <div class="reg-links">
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+            <div>
+              <button class="site-button" type="submit" value="Войти">Войти</button>
+              <div class="reg-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
             </div>
-          </div>
           </form>
         </li>
 
@@ -55,7 +58,7 @@
 
       <section class="info">
         <span>C 10 до 20, ежедневно</span>
-        <a href="#">8 (812) 450-25-25</a>
+        <a href="tel:88124502525">8 (812) 450-25-25</a>
       </section>
 
     </nav>
@@ -64,7 +67,7 @@
     <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
 
     <section class="choice">
-      <div class="slider">
+      <div class="slides">
         <div>
           <img src="img/ice-cream-2.png" width="1045" height="881" alt="Два мороженных: Крем-брюле и пломбир с малиновым  джемом">
           <p>Крем-брюле и пломбир с малиновым  джемом</p>
@@ -72,22 +75,22 @@
         </div>
 
         <div>
-            <img src="#.jpg" width="1045" height="881" alt="#">
-            <p>#</p>
-            <a class="button" href="catalog.html">Давайте оба!</a>
-          </div>
+          <img src="#.jpg" width="1045" height="881" alt="#">
+          <p>#</p>
+          <a class="button" href="catalog.html">Давайте оба!</a>
+        </div>
 
         <div>
-            <img src="#.jpg" width="1045" height="881" alt="#">
-            <p>#</p>
-            <a class="button" href="catalog.html">Давайте оба!</a>
-          </div>
-
-        <div class="slider-controls">
-          <label for="slider-radio-1" class="slider-radio-label"></label>
-          <label for="slider-radio-2" class="slider-radio-label"></label>
-          <label for="slider-radio-3" class="slider-radio-label"></label>
+          <img src="#.jpg" width="1045" height="881" alt="#">
+          <p>#</p>
+          <a class="button" href="catalog.html">Давайте оба!</a>
         </div>
+      </div>
+
+      <div class="slider-controls">
+        <label for="slider-radio-1" class="slider-radio-label"></label>
+        <label for="slider-radio-2" class="slider-radio-label"></label>
+        <label for="slider-radio-3" class="slider-radio-label"></label>
       </div>
 
     </section>
@@ -107,33 +110,33 @@
     </section>
 
     <section class="catalog">
-      <h2>Хиты</h2>
+      <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="catalog-list">
 
         <li class="catalog-item catalog-item-hit">
-            <a href="#"><img src="img/catalog-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
+          <a href="#"><img src="img/catalog-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
           <p class="price">310 Р<span>/кг</span></p>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="catalog-item catalog-item-hit">
-            <a href="#"><img src="img/catalog-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
-          <p class="price">380 Р</p><span>/кг</span>
+          <a href="#"><img src="img/catalog-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
+          <p class="price">380 Р<span>/кг</span></p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="catalog-item catalog-item-hit">
-            <a href="#"><img src="img/catalog-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
-          <p class="price">355 Р</p><span>/кг</span>
+          <a href="#"><img src="img/catalog-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
+          <p class="price">355 Р<span>/кг</span></p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="catalog-item catalog-item-hit">
-            <a href="#"><img src="img/catalog-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-          <p class="price">415 Р</p><span>/кг</span>
+          <a href="#"><img src="img/catalog-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
+          <p class="price">415 Р<span>/кг</span></p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <a class="button" href="#">Быстрый просмотр</a>
         </li>
@@ -143,16 +146,16 @@
     <section class="company-info company-info-icon">
       <h3>Магазин Глейси - это онлайн- и офлайн-магазин по продаже мороженного собственного производста на развес</h3>
       <ul class="company-info-list">
-        <li>
+        <li class="icon-ice">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         </li>
-        <li>
+        <li class="icon-cow">
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
-        <li>
+        <li class="icon-eco">
           <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         </li>
-        <li>
+        <li class="icon-temp">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
@@ -180,42 +183,43 @@
       <p>
         <img src="img/map.jpg" width="1200" height="430" alt="Магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
+      <p>Адрес главного офиса и офлайн-магазина:<br>
+        <span class="big-text">ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
+      </p>
+      <p>
+        Для заказов по телефону:<br>
+        <span class="big-text">8 812 450-25-25</span><br>
+        (c 10 до 20 ежедневно)
+      </p>
+      <button class="button feedback-content-show" type="submit">Форма обратной связи</button>
     </section>
 
   </main>
   <footer class="main-footer">
     <div class="footer-social footer-social-icon">
       <ul>
-        <li>
-          <a class="social-button" href="#">Twitter</a></li>
-        <li>
-          <a class="social-button" href="#">Instagram</a></li>
-        <li>
-          <a class="social-button" href="#">Facebook</a></li>
-        <li>
-          <a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
     </div>
 
     <ul>
-        <div>
-          <li><a href="#" class="heart">Для поставщиков</a></li>
-          <li><a href="#">Наши документы</a></li>
-        </div>
-        <div>
-          <li><a href="#">О производстве</a></li>
-          <li><a class="button" href="#">Экологические стандарты</a></li>
-        </div>
-      </ul>
+      <li><a href="#" class="heart">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
+    </ul>
 
     <p class="footer-copyright footer-copyright-logo">
-      Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a><span> © 2017</span>
-      </p>
+      Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
+    </p>
   </footer>
 
   <div class="popup-feedback feedback-content-show">
     <h3>Мы обязательно вам ответим!</h3>
-    <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+    <button class="popup-close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
     <form action="https://echo.htmlacademy.ru" method="post">
       <input type="text" name="feedback-name" placeholder="Как вас зовут?" required>
       <label class="hiden-top">Как вас зовут?</label>

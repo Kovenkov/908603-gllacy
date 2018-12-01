@@ -6,17 +6,18 @@
 </head>
 <body>
   <header>
-      <nav class="main-header">
-          <a class="main-navigation" href="index.html">
-            <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
-          </a>
-          <ul class="site-navigation">
-            <li class="site-navigation-current"><a href="catalog.html">Каталог</a>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <li class="search-catalog"><a class="button-search" href="#">Поиск по сайту</a></li>
+    <nav class="main-header">
+      <a class="main-navigation" href="index.html">
+        <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
+      </a>
+      <ul class="site-navigation">
+        <li class="site-navigation-current"><a href="catalog.html">Каталог</a>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="search-catalog">
+          <a class="button-search" href="#">Поиск по сайту</a>
           <div class="search-form modal-content-show">
             <form action="#" method="get">
               <input type="search" name="search" placeholder="Что ищем?">
@@ -24,46 +25,43 @@
             </form>
           </div>
         </li>
-
-            <li class="login-link"><a class="login-button" href="#">Вход</a>
-              <form class="authorization-form" action="#" method="post">
-                <input type="email" name="email" placeholder="Электронная почта" required>
-                <label class="hiden-top">Электронная почта</label>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <label class="hiden-top">Пароль</label>
-              <div>
-                <button class="site-button" type="submit" value="Войти">Войти</button>
-                <div class="reg-links">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>
+        <li class="login-link"><a class="login-button" href="#">Вход</a>
+          <form class="authorization-form" action="#" method="post">
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <label class="hiden-top">Электронная почта</label>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <label class="hiden-top">Пароль</label>
+            <div>
+              <button class="site-button" type="submit" value="Войти">Войти</button>
+              <div class="reg-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
               </div>
-              </form>
-            </li>
+            </div>
+          </form>
+        </li>
+        <li class="basket"><a href="#" aria-label="Корзина: пусто">Пусто</a>
+          <div>
+            <span>Пломбир с апельсиновым джемом</span>
+            <span>1,5 кг х</span><span class="coins"> 200 руб.</span>
+            <span>300 руб.</span>
+          </div>
+          <div>
+            <span>Клубничный пломбир с присыпкой из белого шоколада</span>
+            <span>1,5 кг х</span><span class="coins"> 300 руб.</span>
+            <span>450 руб.</span>
+          </div>
+          <span class="total">Итого: 750 руб.</span>
+          <button class="site-button" type="submit" value="Оформить заказ">Оформить заказ</button>
+        </li>
+      </ul>
 
-            <li class="basket"><a href="#" aria-label="Корзина: пусто">Пусто</a>
-              <div>
-                <span>Пломбир с апельсиновым джемом</span>
-                <span>1,5 кг х</span><span class="coins"> 200 руб.</span>
-                <span>300 руб.</span>
-              </div>
-              <div>
-                  <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                  <span>1,5 кг х</span><span class="coins"> 300 руб.</span>
-                  <span>450 руб.</span>
-              </div>
-              <span class="total">Итого: 750 руб.</span>
-              <button class="site-button" type="submit" value="Оформить заказ">Оформить заказ</button>
-            </li>
+      <section class="info">
+        <span>C 10 до 20, ежедневно</span>
+        <a href="tel:88124502525">8 (812) 450-25-25</a>
+      </section>
 
-          </ul>
-
-          <section class="info">
-            <span>C 10 до 20, ежедневно</span>
-            <a href="#">8 (812) 450-25-25</a>
-          </section>
-
-        </nav>
+    </nav>
 
 
   </header>
@@ -175,7 +173,7 @@
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
-        <li class="pagination-item pagination-item-next visually-hidden" ><a href="#">Следующая страница</a></li>
+        <li class="pagination-item pagination-item-next" ><a href="#"><span class="visually-hidden">Следующая страница</span></a></li>
       </ul>
 
     </section>
@@ -184,27 +182,22 @@
   <footer class="main-footer">
     <div class="footer-social footer-social-icon">
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Instagram</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
     </div>
 
     <ul>
-      <div>
-        <li><a href="#" class="heart">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-      </div>
-      <div>
-        <li><a href="#">О производстве</a></li>
-        <li><a class="button" href="#">Экологические стандарты</a></li>
-      </div>
+      <li><a href="#" class="heart">Для поставщиков</a></li>
+      <li><a href="#">Наши документы</a></li>
+      <li><a href="#">О производстве</a></li>
+      <li><a href="#">Экологические стандарты</a></li>
     </ul>
 
     <p class="footer-copyright footer-copyright-logo">
-      <span>Сделано в</span>
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a><span> © 2017</span>
+      Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
     </p>
   </footer>
 </body>

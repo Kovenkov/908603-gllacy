@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto-Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  /* text-transform: capitalize; */
+
+  background-color: #849d8f;
+  background-image: url("../img/gl.jpg");
+  background-position: top center;
+  background-repeat: repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  color: #ffffff;
+}
+
+.button {
+  background: linear-gradient(to top, #e74b36 0%, #eb563b 50%, #f26843 100%);
+  font-size: 18px; /* Размер шрифта */
+  padding: 10px 20px; /* Поля вокруг текста */
+  color: #fff; /* Цвет текста */
+  border: 1px solid #dc724c; /* Параметры рамки */
+  border-radius: 25px; /* Радиус скругления */
+  text-decoration: none;
+  box-shadow: 0 2px 2px rgba(85,8,0,.54);
+}
+
+.slider .button {
+  font-size: 32px; /* Размер шрифта */
+}
+
+/* Не работает */
+.button:hover
+{
+  color: #fff;
+  background: linear-gradient(to top, #ec6f5e 0%, #f07a63 50%, #f58669 100%);
+  box-shadow: 0 1px 2px #ac1000;
+}
+.button:active
+{
+  color: #fff;
+  background: linear-gradient(to bottom, #ec6f5e 0%, #f07a63 50%, #f58669 100%);
+  box-shadow: 0 -1px 2px #ac1000;
+}
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.sub-menu
+ {
+  display: none;
+}
+/* узнат изображение */
+/* .search-catalog{
+  background-image: url("../img/radio-off.svg");
+} */
+
+.site-navigation:hover .sub-menu {
+  display: block;
+}
+
+.catalog-item {
+
+
+}
