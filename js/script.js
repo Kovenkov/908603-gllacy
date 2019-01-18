@@ -1,11 +1,11 @@
   var button = document.querySelector(".site-button");
-  var feedback = document.querySelector(".popup-feedback");
+  var popup = document.querySelector(".popup-feedback");
 
   var close = popup.querySelector(".popup-close");
 
-  var form = document.querySelector(".authorization-form");
-  var login = popup.querySelector("[name=login]");
-  var password = popup.querySelector("[name=password]");
+  var form = document.querySelector(".authorization-form2");
+  var login = popup.querySelector("[name=feedback-name]");
+  var email = popup.querySelector("[name=email]");
 
   var isStorageSupport = true;
   var storage = "";
@@ -22,7 +22,7 @@
 
     if (storage) {
       login.value = storage;
-      password.focus();
+      email.focus();
     } else {
       login.focus();
     }
@@ -30,15 +30,14 @@
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
-    feedback.classList.remove("modal-show");
     popup.classList.remove("modal-show");
   });
 
   form.addEventListener("submit", function (evt) {
     evt.preventDefault();
-    if (!login.value || !password.value) {
+    if (!login.value || !email.value) {
       evt.preventDefault();
-      console.log("Нужно ввести логин и пароль");
+      console.log("Нужно ввести имя и почту");
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");

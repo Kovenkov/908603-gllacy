@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин мороженного «Глейси»</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet"> -->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -195,33 +195,35 @@
             </ul>
           </article>
         </div>
+        <section class="news-blog">
 
-        <div class="row">
+          <div class="row">
 
-          <div class="main-bottom-blocks">
-            <div class="col s-2">
-              <article class="main-bottom blog">
-                <h2>Новое в нашем блоге</h2>
-                <a href="#"><span>10 способов сервировки</span><br> <span>фруктовых щербетов</span><br><span>к столу</span></a>
-              </article>
-            </div>
+            <div class="main-bottom-blocks">
+              <div class="col s-2">
+                <article class="main-bottom blog">
+                  <h2>Новое в нашем блоге</h2>
+                  <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                </article>
+              </div>
 
-            <div class="col s-2">
-              <article class="main-bottom subscribe">
-                <div class="subscribe-wrapper">
-                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-                  <form class="subscribe-form" action="url" method="post">
-                    <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
-                    <label class="hiden-top"><span>Электронная почта</span></label>
-                    <button class="site-button" type="submit">Отправить</button>
-                  </form>
-                </div>
-              </article>
+              <div class="col s-2">
+                <article class="main-bottom subscribe">
+                  <div class="subscribe-wrapper">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                    <form class="subscribe-form" action="url" method="post">
+                      <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
+                      <label class="hiden-top"><span>Электронная почта</span></label>
+                      <button class="site-button" type="submit">Отправить</button>
+                    </form>
+                  </div>
+                </article>
+              </div>
+
             </div>
 
           </div>
-
-        </div>
+        </section>
 
       </div>
 
@@ -230,14 +232,10 @@
     <div class="map-block" id="map">
       <div class="container">
         <div class="map-address">
-          <p>Адрес главного офиса и
-            <br> офлайн магазина:
-            <br>
-            <span class="map-bold-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-          <p class="map-address-phone">Для заказов по телефону:
-            <br>
-            <span class="map-bold-text">8 812 450-25-25</span>
-            <br> (с 10 до 20 ежедневно)</p>
+          <p>Адрес главного офиса и офлайн магазина:</p>
+            <span class="map-bold-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          <p class="map-address-phone">Для заказов по телефону:</p>
+            <p class="map-bold-text2">8 812 450-25-25</p>(с 10 до 20 ежедневно)
           <div class="map-button-wrapper">
             <a class="site-button feedback-button" href="#">Форма обратной связи</a>
           </div>
@@ -245,55 +243,51 @@
       </div>
     </div>
 
-    <div class="wrapper">
+    <footer class="main-footer">
+      <div class="row">
 
-      <footer class="main-footer">
-        <div class="row">
-
-          <div class="col s-1">
-            <div class="footer-social">
-              <a class="social-btn social-btn-tw" href="#"><span class="visually-hidden">Twitter</span></a>
-              <a class="social-btn social-btn-in" href="#"><span class="visually-hidden">Instagram</span></a>
-              <a class="social-btn social-btn-fb" href="#"><span class="visually-hidden">Facebook</span></a>
-              <a class="social-btn social-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-            </div>
+        <div class="col s-1">
+          <div class="footer-social">
+            <a class="social-btn social-btn-tw" href="#">Twitter</a>
+            <a class="social-btn social-btn-in" href="#">Instagram</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           </div>
-
-          <div class="col s-2">
-            <table class="footer-menu">
-              <tbody>
-                <tr>
-                  <td><a class="heart" href="#">Для поставщиков</a></td>
-                  <td><a href="#">Наши документы</a></td>
-                </tr>
-                <tr>
-                  <td><a href="#">О производстве</a></td>
-                  <td><a href="#">Экологические стандарты</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="col s-1">
-            <div class="footer-copyright">
-              <a href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-htmlacademy.svg" width="108" height="36" alt="HTML Academy">
-              </a>
-              <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
-            </div>
-          </div>
-
         </div>
-      </footer>
 
-    </div>
+        <div class="col s-2">
+          <table class="footer-menu">
+            <tbody>
+              <tr>
+                <td><a class="heart" href="#">Для поставщиков</a></td>
+                <td><a href="#">Наши документы</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">О производстве</a></td>
+                <td><a href="#">Экологические стандарты</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col s-1">
+          <div class="footer-copyright">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" width="108" height="36" alt="HTML Academy">
+            </a>
+            <p>Сделано в <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
   </div>
 
   <div class="popup-feedback">
     <h3>Мы обязательно вам ответим!</h3>
     <button class="popup-close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
-    <form action="#" method="post">
+    <form class="authorization-form2" action="#" method="post">
 
       <input type="text" name="feedback-name" placeholder="Как вас зовут?" required>
       <label class="visually-hidden"><span>Как вас зовут?</span></label>
