@@ -1,4 +1,4 @@
-  var button = document.querySelector(".site-button");
+  var button = document.querySelector(".feedback-button");
   var popup = document.querySelector(".popup-feedback");
 
   var close = popup.querySelector(".popup-close");
@@ -18,7 +18,7 @@
 
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
-    feedback.classList.add("modal-show");
+    popup.classList.add("modal-show");
 
     if (storage) {
       login.value = storage;
