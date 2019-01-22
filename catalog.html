@@ -6,7 +6,8 @@
   <title>Магазин мороженного «Глейси»</title>
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet"> -->
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min-style.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
 </head>
 
 <body class="inner-page">
@@ -46,11 +47,11 @@
           <div class="header-buttons clearfix">
             <div class="search">
               <div class="search-wrapper">
-                <a class="button-search" href="#"></a>
+                <a class="button-search" href="#" title="Поиск по сайту"></a>
               </div>
               <div class="search-form">
                 <form action="#" method="get">
-                  <input type="search" name="search" placeholder="Что ищем?">
+                  <input type="search" class="input-search" name="search" placeholder="Что ищем?">
                   <label class="visually-hidden"><span>Что ищем?</span></label>
                 </form>
               </div>
@@ -61,9 +62,9 @@
                 <a class="login-button" href="#">Вход</a>
                 <div class="login-form clearfix">
                   <form class="authorization-form" action="#" method="post">
-                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="email" class="inpun-email" name="email" placeholder="Электронная почта">
                     <label class="visually-hidden"><span>Электронная почта</span></label>
-                    <input type="password" name="password" placeholder="Пароль">
+                    <input type="password" class="input-password" name="password" placeholder="Пароль">
                     <label class="visually-hidden"><span>Пароль</span></label>
                     <button class="site-button" type="submit" value="Войти">Войти</button>
                   </form>
@@ -127,7 +128,7 @@
 
       <div class="main">
         <h1 class="page-heading">Сливочное мороженое</h1>
-        <div class="row-inline">
+        <div class="row-inline row-inline-main">
           <aside class="filters">
             <form class="filters-form" action="#" method="post">
               <fieldset class="filter-category">
@@ -145,7 +146,7 @@
                       <div class="feature-wrapper">
                         <div class="range-controls">
                           <div class="scale">
-                            <div class="bar" style="margin-left: 10%; width: 60%"></div>
+                            <div class="bar" style="margin-left: 15%; width: 56%"></div>
                           </div>
                           <div class="toggle toggle-min"></div>
                           <div class="toggle toggle-max"></div>
@@ -169,7 +170,7 @@
 
               <fieldset class="filter-category">
                 <legend>Наполнители:</legend>
-                <div class="feature-wrapper">
+                <div class="feature-wrapper feature-wrapper-fillers">
                   <input type="checkbox" value="шоколадные" id="chocolate" checked>
                   <label for="chocolate">шоколадные</label>
                   <input type="checkbox" value="сахарные присыпки" id="sugar" checked>
@@ -347,22 +348,22 @@
 
         <div class="row">
           <ul class="pagnition clearfix">
-            <li>‹</li>
-            <li class="pagnition-active">1</li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a class="pagnition-nav" href="#">›</a></li>
+            <li title="Назад">‹</li>
+            <li class="pagnition-active" title="1 страница">1</li>
+            <li><a href="#" title="2 страница">2</a></li>
+            <li><a href="#" title="3 страница">3</a></li>
+            <li><a href="#" title="4 страница">4</a></li>
+            <li><a href="#" title="5 страница">5</a></li>
+            <li><a class="pagnition-nav" href="#" title="Вперёд">›</a></li>
           </ul>
         </div>
       </div>
 
-      <footer class="main-footer">
+      <footer class="main-footer main-footer-catalog">
         <div class="row">
 
           <div class="col s-1">
-            <div class="footer-social">
+            <div class="footer-social footer-social-catalog">
               <a class="social-btn social-btn-tw" href="#">Twitter</a>
               <a class="social-btn social-btn-in" href="#">Instagram</a>
               <a class="social-btn social-btn-fb" href="#">Facebook</a>
@@ -370,7 +371,7 @@
             </div>
           </div>
 
-          <div class="col s-2">
+          <div class="col s-2 s-2-catalog">
             <table class="footer-menu">
               <tbody>
                 <tr>
@@ -385,8 +386,8 @@
             </table>
           </div>
 
-          <div class="col s-1">
-            <div class="footer-copyright">
+          <div class="col s-1 s-1-catalog">
+            <div class="footer-copyright footer-copyright-catalog">
               <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-htmlacademy.svg" width="108" height="36" alt="HTML Academy">
               </a>

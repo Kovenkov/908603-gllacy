@@ -6,7 +6,8 @@
   <title>Магазин мороженного «Глейси»</title>
   <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet"> -->
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/min-style.css" rel="stylesheet">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -41,7 +42,7 @@
             </ul>
           </nav>
 
-          <div class="header-buttons clearfix">
+          <div class="header-buttons clearfix header-buttons-index">
 
             <div class="search">
               <div class="search-wrapper">
@@ -49,7 +50,7 @@
               </div>
               <div class="search-form">
                 <form action="#" method="get">
-                  <input type="search" name="search" placeholder="Что ищем?">
+                  <input type="search" class="input-search" name="search" placeholder="Что ищем?">
                   <label class="visually-hidden">Что ищем?</label>
                 </form>
               </div>
@@ -59,9 +60,9 @@
                 <a class="login-button" href="#">Вход</a>
                 <div class="login-form clearfix">
                   <form class="authorization-form" action="#" method="post">
-                    <input type="email" name="email" placeholder="Электронная почта" required>
+                    <input type="email" class="password inpun-email" name="email" placeholder="Электронная почта" required>
                     <label class="visually-hidden">Электронная почта</label>
-                    <input type="password" name="password" placeholder="Пароль" required>
+                    <input type="password" class="input-password" name="password" placeholder="Пароль" required>
                     <label class="visually-hidden">Пароль</label>
                     <button class="site-button" type="submit" value="Войти">Войти</button>
                   </form>
@@ -212,7 +213,7 @@
                   <div class="subscribe-wrapper">
                     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                     <form class="subscribe-form" action="url" method="post">
-                      <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
+                      <input type="email" class="inpun-email" name="subscribe-email" placeholder="Электронная почта" required>
                       <label class="hiden-top"><span>Электронная почта</span></label>
                       <button class="site-button" type="submit">Отправить</button>
                     </form>
@@ -235,18 +236,18 @@
           <p>Адрес главного офиса и офлайн магазина:</p>
             <span class="map-bold-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
           <p class="map-address-phone">Для заказов по телефону:</p>
-            <p class="map-bold-text2">8 812 450-25-25</p><span class="time-work">(с 10 до 20 ежедневно)</span>
+          <p x-ms-format-detection="none" class="map-bold-text2">8 812 450-25-25</p><span class="time-work">(с 10 до 20 ежедневно)</span>
           <div class="map-button-wrapper">
-            <a class="site-button feedback-button" href="#">Форма обратной связи</a>
+            <a class="site-button feedback-button" href="writeus.html">Форма обратной связи</a>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-index">
       <div class="row">
 
-        <div class="col s-1">
+        <div class="col s-3">
           <div class="footer-social">
             <a class="social-btn social-btn-tw" href="#">Twitter</a>
             <a class="social-btn social-btn-in" href="#">Instagram</a>
@@ -255,7 +256,7 @@
           </div>
         </div>
 
-        <div class="col s-2">
+        <div class="col s-2 s-2-index">
           <table class="footer-menu">
             <tbody>
               <tr>
@@ -289,17 +290,17 @@
     <button class="popup-close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
     <form class="authorization-form2" action="#" method="post">
 
-      <input type="text" name="feedback-name" placeholder="Как вас зовут?" required>
+      <input type="text" class="input-text" name="feedback-name" placeholder="Как вас зовут?" required>
       <label class="visually-hidden"><span>Как вас зовут?</span></label>
-      <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+      <input type="email" class="inpun-email" name="email" placeholder="Ваша почта для ответа?" required>
       <label class="visually-hidden"><span>Ваша почта для ответа?</span></label>
-      <textarea name="feedback-text" placeholder="Напишите что-нибудь..." required></textarea>
+      <textarea name="feedback-text" class="textarea-class" placeholder="Напишите что-нибудь..." required></textarea>
       <label class="visually-hidden"><span>Напишите что-нибудь...</span></label>
       <button class="site-button" type="submit">Отправить</button>
     </form>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/min-script.js"></script>
 </body>
 
 </html>
